@@ -8,66 +8,367 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="estilo.css">
+
+
+<!--------DASHBOARD----------------------------------------------------- -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Willy Wonkas - Personal Portfolio Website Template" />
+<meta name="keywords" content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
+<meta name="author" content="willy wonka" />
+<title>Willy Wonkas - Personal Portfolio Website Template</title>
+<!--favicon-img--> 
+<link rel="icon" type="image/png" href="images/favicon.png">
+<!--favicon-img-->
+<!--main css file should not be removed -->
+<link rel="stylesheet" href="css/index.css">
+<!--main css file-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
     <title>My Profile</title>
 </head>
 
 <body>
-    <!-- SECCION I N I C I O -->
     <section id="inicio">
-        <div class="contenido">
-            <header>
-                <div class="contenido-header">
-                    
-                    <nav id="nav" class="">
-                        <ul id="links">
-                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
-                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
-                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
-                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
-                        </ul>
-                    </nav>
-
-                    <!-- Icono del menu responsive -->
-                    <div id="icono-nav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars"></i>
+        <!--contains all the div-->
+        <div id="all">
+            <!--mouse  follower-->
+                <div class="cursor"></div>
+            <!--mouse  follower-->
+            <!--loader-->
+                <div id="loader">
+                    <span class="color">Arlo</span>Brown 
+                </div>
+            <!--loader-end-->
+            <!--link-screen-->
+                <div id="breaker">
+                </div>
+                <div id="breaker-two">
+                </div>
+            <!--link-screen-->
+                <!--Main-Section-->
+                <!--Navigator-fullscreen-->
+                <div id="navigation-content">
+                    <div class="logo">
+                        <img src="images/willy wonka logo.png" alt="logo">
                     </div>
-
-
-                    <div class="redes">
-                        <a href="https://discord.com/invite/Zain#1347"><i class="fa-brands fa-discord"></i></a>
-                        <a href="https://github.com/Andresfl12350"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/andresfl/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.twitch.tv/Zain_ttv_"><i class="fa-brands fa-twitch"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100064119936500"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/fl_andres_garcia/"><i class="fa-brands fa-instagram-square"></i></a>
+                    <div class="navigation-close">
+                        <span class="close-first"></span>
+                        <span class="close-second"></span>
+                    </div>
+                    <div class="navigation-links">
+                        <a href="#" data-text="HOME" id="home-link" >HOME</a>
+                        <a href="perfil.html" data-text="ABOUT" id="home-link">SOBRE MI</a>
+                        <a href="conocimientos.html" data-text="BLOG" id="blog-link" >CONOCIMIENTOS</a>
+                        <a href="#" data-text="PORTFOLIO" id="portfolio-link" >PORTAFOLIO</a>
+                        <a href="#" data-text="CONTACT" id="contact-link" >CONTACT</a>
                     </div>
                 </div>
-            </header>
-            <div class="presentacion">
-                <p class="bienvenida">Bienvenidos</p>
-                <h2>Soy <span>Andrés García</span>, Desarrollador Web</h2>
-                <p class="descripcion">✅ Fronted Developer | HTML, CSS, JavaSript, TypeScript. ✅ Estudiante auto motivado con pasión por el aprendizaje y el crecimiento.</p>
-                <a href="#portfolio">Ir a Portafolio</a>
-            </div>
-            
-        </div>
-    </section>
+                <!--Navigator-Fullscreen END-->
+                  <!--Home Page-->
+                <!--Menubar-->
+                <div id="navigation-bar">
+                    <img src="images/willy wonka logo.png" alt="logo">
+                    <div class="menubar">
+                        <span class="first-span"></span>
+                        <span class="second-span"></span>
+                        <span class="third-span"></span>
+                    </div>
+                </div>
+                <!--Menubar End-->
+                  <!--Header-->
+                <div id="header">
+                    <div id="particles"></div>
+                      <!--Social Media Links-->
+                    <div class="social-media-links">
+                       <a href="#"><img src="images/instagram logo.png" class="social-media" alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
+                        <a href="#"><img src="images/facebook logo.png" class="social-media" alt="facebook-logo"></a>
+                        <a href="#"><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
+                        <a href="#"><img src="images/twitter logo.png" class="social-media" alt="twitter-logo"></a>
+        
+                    </div>
+                    <!--Social Media Links end-->
+                    <div class="header-content">
+                        <div class="header-content-box">
+                        <div class="firstline"><span class="color">Desarrollador </span>Web</div>
+                        <div class="secondline">
+                        Mi nombre es
+                    <span class="txt-rotate color" data-period="1200"data-rotate='[ " Andrés García" ]'></span>
+                    <span class="slash">|</span>
+                </div>
+                            <div class="contact">
+                        <a href="Mailto:#"><img src="images/mail.png" alt="email-pic" class="contactpic"></a><!--Your email Id write in place of "#"-->
+                        <a href="Tel:#"><img src="images/call.png" alt="phone-pic" class="contactpic"></a><!--Your telephone number Id write in place of "#"-->
+                            </div>    
+                    </div>
+                    </div>
+                    <!--header image-->
+                    <div class="header-image">
+                    <img src="img/1.jpeg" alt="logo">
+                    </div>
+                    <!--header image end-->
+                </div>
+                   <!--Header End-->
+                <!--HomePage End-->
+                <!--Main-Section End-->
+                <!--about-->
+                <div id="about">
+                    <div class="contenedor-foto">
+                        <img src="img/1.jpeg" alt="">
+                    </div>
+                    <div class="sobremi">
+                        <p class="titulo-seccion">Sobre Mi</p>
+                        <h2>Hola, Soy <span>Andrés García</span> </h2>
+                        <h3>Desarrollador Web</h3>
+                        <p>✅ Fronted Developer | HTML, CSS, JavaSript, TypeScript. ✅ Estudiante auto motivado con pasión por el aprendizaje y el crecimiento.</p>
+                        
+                        <a href="https://utaedu-my.sharepoint.com/:b:/g/personal/agarcia0282_uta_edu_ec/ETNXi6KgfEZJskJNtc0NvvYB8ol0-_3i6Bae3tQN5vgKMw?e=x3c76B">Descargar CV</a>
+                    </div>
 
-    <!-- SECCION S O B R E M I -->
-    <section id="sobremi">
-        <div class="contenedor-foto">
-            <img src="img/1.jpeg" alt="">
-        </div>
-        <div class="sobremi">
-            <p class="titulo-seccion">Sobre Mi</p>
-            <h2>Hola, Soy <span>Andrés García</span> </h2>
-            <h3>Desarrollador Web</h3>
-            <p>✅ Fronted Developer | HTML, CSS, JavaSript, TypeScript. ✅ Estudiante auto motivado con pasión por el aprendizaje y el crecimiento.</p>
-            
-            <a href="https://utaedu-my.sharepoint.com/:b:/g/personal/agarcia0282_uta_edu_ec/ETNXi6KgfEZJskJNtc0NvvYB8ol0-_3i6Bae3tQN5vgKMw?e=x3c76B">Descargar CV</a>
-        </div>
-    </section>
+                </div>
+
+                <!-- SECCION S O B R E M I -->
+                <!--about end-->
+                <!--portfolio-->
+                
+               <!--copyright-section-->
+                     </div>
+                <!--portfolio end-->
+                <!--blog-->
+                <div id="blog">
+                    <div class="color-changer">
+                        <div class="color-panel">
+                            <img src="images/gear.png" alt="">
+                        </div>
+                        <div class="color-selector">
+                            <div class="heading">Custom Colors</div>
+                            <div class="colors">
+                                <ul >
+                                <li>
+                                    <a href="#0" class="color-red " title="color-red"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-purple" title="color-purple"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-malt" title="color-malt"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-green" title="color-green"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-blue" title="color-blue"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-orange" title="color-orange"></a>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                <div class="blog-header"> Blogs</span>
+                    <span class ="header-caption"> My Latest <span class="color"> blog posts.</span></span></div>
+                    <div class="blog-content">
+                         <div class="blogs">
+                             <a href="#">
+                             <div class="img">
+                                <img src="images/post-one.jpg" alt="blog-one">
+                                <div class="blog-date">8 May,20</div>
+                             </div>
+                             <div class="blog-text">
+                                 <h3>Harleys In Hawaai</h3>
+                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae illum, corrupti quo 
+                                     veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum provident? Magnam fugiat voluptas
+                                      libero.</p>
+                             </div></a>
+                         </div>      
+                         <div class="blogs">
+                            <a href="#">
+                            <div class="img">
+                                <img src="images/post-two.jpg" alt="blog-two">
+                                <div class="blog-date">16 Jan,20</div>
+                            </div>
+                            <div class="blog-text">
+                                <h3>Key To Be Productive</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt maiores, 
+                                    recusandae cupiditate ducimus a non tempora, architecto obcaecati eaque ipsum assumenda harum dolorum iusto tenetur
+                                     eius eligendi dolor magnam sit!</p>
+                            </div></a>
+                        </div>      
+                        <div class="blogs">
+                            <a href="#">
+                            <div class="img">
+                                <img src="images/post-three.jpg" alt="blog-three">
+                                <div class="blog-date">30 Nov,19</div>
+                            </div>
+                            <div class="blog-text">
+                                <h3>Caffeine Addict</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nostrum impedit 
+                                    ipsam perspiciatis ratione sapiente quasi optio reprehenderit, labore consequuntur suscipit cum quas.
+                                     Officiis dolorem asperiores, ut necessitatibus quas doloremque?</p>
+                            </div></a>
+                        </div>
+                        <div class="blogs">
+                            <a href="#">
+                            <div class="img">
+                                <img src="images/post-four.jpg" alt="blog-four">
+                                <div class="blog-date">6 Jul,19</div>
+                            </div>
+                            <div class="blog-text">
+                                <h3>Web Development</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, veniam ratione quam vitae,
+                                     quibusdam explicabo rem debitis velit ipsa repellat, impedit nulla fuga? Amet corporis praesentium quae.
+                                      Sed, quibusdam necessitatibus.</p>
+                            </div></a>
+                        </div>  
+                        <div class="blogs">
+                            <a href="#">
+                            <div class="img">
+                                <img src="images/post-five.jpg" alt="blog-five">
+                                <div class="blog-date">1 Jun,19</div>
+                            </div>
+                            <div class="blog-text">
+                                <h3>Work From Home</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt eum necessitatibus rem 
+                                    dignissimos nulla mollitia cumque, provident officiis non vitae? Animi aut doloremque illum, soluta hic minus 
+                                    sint explicabo..</p>
+                            </div></a>
+                        </div>  
+                        <div class="blogs">
+                            <a href="#">
+                            <div class="img">
+                                <img src="images/post-six.jpg" alt="blog-six">
+                                <div class="blog-date">28 Feb,19</div>
+                            </div>
+                            <div class="blog-text">
+                                <h3>Business Trip</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora dolorum fuga ratione, unde, 
+                                    ex quaerat iste numquam nemo nihil nobis rem sint quia recusandae dignissimos quos ut rerum nam.</p>
+                            </div></a>
+                        </div>        
+                    </div>
+                       <!--copyright-section You Can Remove After Downloading-->
+                       <div class="footer">
+                        <div class="footer-text">
+                            <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Willy Wonkas
+                        </div>
+                       </div>
+               <!--copyright-section-->
+                </div>
+                <!--blog end-->
+                <!--contact-->
+             <div id="contact">
+                <div class="color-changer">
+                    <div class="color-panel">
+                        <img src="images/gear.png" alt="">
+                    </div>
+                    <div class="color-selector">
+                        <div class="heading">Custom Colors</div>
+                        <div class="colors">
+                            <ul >
+                            <li>
+                                <a href="#0" class="color-red " title="color-red"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-purple" title="color-purple"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-malt" title="color-malt"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-green" title="color-green"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-blue" title="color-blue"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-orange" title="color-orange"></a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                 <div class="contact-header">Contact <span class="color"> Me</span>
+                <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div></div>
+                <div class="contact-content">
+                    <!--Contact form-->
+                     <div class="contact-form">
+                         <div class="form-header">
+                             Message Me
+                         </div>
+                         <form id="myForm" action="#">
+                            <div class="input-line">
+                                <input  id="name" type="text" placeholder="Name" class="input-name">
+                                <input id="email" type="email" placeholder="Email"  class="input-name">
+                            </div>
+                            <input type="text" id="subject" placeholder="subject" class="input-subject">
+                            <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
+                            <button type="button" id ="submit" value="send">Submit</button>
+                         </form>
+                       
+                     </div>
+                    <!--Contact form-->
+                    <!--Contact information-->
+                     <div class="contact-info">
+                        <div class="contact-info-header">
+                            Contact Info
+                        </div>
+                        <div class="contact-info-content">
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-name.png" class="icon" alt="name-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>Name</h6>
+                                <p>Arlo Brown</p>
+                          </div>
+                        </div>
+                        <div class="contect-info-content-line">
+                          <img src="./images/icon-location.png" class="icon" alt="location-icon">
+                          <div class="contact-info-icon-text">
+                              <h6>Location</h6>
+                              <p>New York, USA</p>
+                        </div>
+                      </div>
+                      <div class="contect-info-content-line">
+                          <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
+                          <div class="contact-info-icon-text">
+                              <h6>Call</h6>
+                              <p>+9865376531</p>
+                        </div>
+                      </div>
+                      
+                      <div class="contect-info-content-line">
+                          <img src="./images/icon-email.png" class="icon" alt="email-icon">
+                          <div class="contact-info-icon-text">
+                              <h6>Email</h6>
+                              <p>Info@example.com</p>
+                        </div>
+                      </div>
+                        </div>
+                    <!--Contact information end-->
+                   </div>
+                </div>
+                            <!--copyright-section You Can Remove After Downloading-->
+                            <div class="footer">
+                                <div class="footer-text">
+                                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Willy Wonkas
+                                </div>
+                               </div>
+                       <!--copyright-section-->
+             </div>
+                <!--contact end-->
+            </div>
+            <!--all the divisions-->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/particles.js"></script>
+            <script src="js/particles.min.js"></script>
+            <script src="js/index.js"></script>
+            <!--particles script-->
+            <script>
+          particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+            </script>
+
+</section>
+
 
     <!-- SECCION S E R V I C I O S -->
     
